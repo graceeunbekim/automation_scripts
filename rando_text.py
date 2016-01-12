@@ -39,14 +39,17 @@ def pick_random_msg():
 	'''
 	pick_random_msg() chooses a random text from a list of text
 	messages that I sent repeatedly and frequently to people.
+	Texts are subtracted from a .txt file within the same directory
+	and the text file is passed as a third argument.
 
 	it generates a random number from 0 to the len(messages),
 	and then use the number as an index of a list.
 
 	@return: a string of text message.
 	'''
-	messages = ['Ok', 'on my way', 'love you', 'gracias']
-	position = randint(0,3)
+	msg_file = sys.argv[2]
+	messages = [str(line.rstrip('\n')) for line in open(msg_file)]
+	position = randint(0, (len(messages)-1))
 	return messages[position]
 
 def send_text(client, receiver, sender):
