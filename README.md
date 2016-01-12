@@ -7,5 +7,7 @@ I'm simply creating my own automation scripts to make my life so much easier. Ge
 
 | Site          | Details                                        |
 | ------------- |:--------------------------------------------:|
-| `random_text.py`  | this sends a random text to a receiver, using TWILIO API client. |
-| `interpret_me.py`        | work in progress |
+| `random_text.py`    | this sends a random text to a receiver, using TWILIO API client. |
+| `birthday_smash.py` | work in progress |
+| `holiday_smash.py`  | work in progress |
+| `interpret_me.py`   | work in progress |
