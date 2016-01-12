@@ -8,6 +8,7 @@ TWILIO_PHONE_NUM = os.environ['TWILIO_PHONE_NUM']
 # set your own credentials as environment variables, following this format.
 # TWILIO_ACCOUNT_SID='XXX'
 # TWILIO_AUTH_TOKEN='YYY'
+# TWILIO_PHONE_NUM='ZZZ'
 
 def get_twilio_params():
 	'''
@@ -21,8 +22,8 @@ def get_twilio_params():
 	account_sid = "TWILIO_ACCOUNT_SID"
 	auth_token = "TWILIO_AUTH_TOKEN"
 
-	try:  
-   		return (os.environ[account_sid], os.environ[auth_token])
+	try:
+		return (os.environ[account_sid], os.environ[auth_token])
 	except KeyError: 
 	   print "Please set the environment variable for twilio client."
 	   sys.exit(1)
