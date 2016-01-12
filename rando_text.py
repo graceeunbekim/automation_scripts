@@ -59,7 +59,13 @@ def send_text(client, receiver, sender):
 	text_body = pick_random_msg()
 	client.messages.create(to=receiver, from_=sender, body=text_body)
 
+def __main__():
+	'''
+	main execute method to send a message with a randomly picked text.
+	pass a receiver's phone number as an argument when running the script.
+	'''
+	client = create_client()
+	receiver = str(sys.argv[1])
+	send_text(client, receiver, TWILIO_PHONE_NUM)
 
-# execute
-client = create_client()
-send_text(client, "xxx", TWILIO_PHONE_NUM)
+__main__()
