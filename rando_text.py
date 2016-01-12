@@ -1,3 +1,12 @@
+__author__     = "Grace Eunbe Kim"
+__copyright__  = "Copyright 2016, The Automation Project"
+__credits__    = "Grace Eunbe Kim"
+__license__    = "Ubelicious Grace"
+__version__    = "1.0.0"
+__maintainer__ = "Grace Eunbe Kim"
+__email__      = "eunbegracekim40@gmail.com"
+__status__     = "Production"
+
 from twilio.rest import TwilioRestClient 
 from random import randint
 import os
