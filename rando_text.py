@@ -73,4 +73,6 @@ def __main__():
 	receiver = str(sys.argv[1])
 	send_text(client, receiver, TWILIO_PHONE_NUM)
 
+# run following commend with 'xxx' being replaced by reciever's number
+# python rando_text.py xxxxxxxxxx texts.txt
 __main__()
